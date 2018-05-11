@@ -7,7 +7,7 @@ class Triangle
     @t << one 
     @t << two 
     @t << three
-    @kind = find_kind
+    #@kind = find_kind
   end 
   
     def below_zero?
