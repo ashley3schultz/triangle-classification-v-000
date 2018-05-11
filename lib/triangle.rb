@@ -10,12 +10,6 @@ class Triangle
     @kind = find_kind
   end 
   
-  def below_zero?
-    @t.any? {|s| s <= 0
-      #binding.pry
-    }
-  end
-  
   #def triangle_inequality?
   #    a = []
   #    a << (@t[0] + @t[2]) - @t[1]
@@ -43,6 +37,12 @@ class Triangle
     end
   end 
     
+      def below_zero?
+    @t.any? {|s| s <= 0
+      #binding.pry
+    }
+  end
+  
     def equilateral?
       @t.all? {|s| s == @t[0]} 
     end
