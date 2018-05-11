@@ -19,7 +19,6 @@ class Triangle
       a = (@t[1] + @t[2]) - @t[0]
       b = (@t[0] + @t[2]) - @t[1]
       c = (@t[0] + @t[1]) - @t[2]
-      binding.pry
       a.any? {|t| t < 0}
   end
   
