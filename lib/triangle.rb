@@ -23,11 +23,11 @@ class Triangle
   
   def find_kind
     if equilateral?
-      @kind = @equilateral
+      @kind = :equilateral
     elsif scalene?
-      @kind = @scalene
+      @kind = :scalene
     elsif isosceles?
-      @kind = @isosceles
+      @kind = :isosceles
     else 
       FALSE
     end 
