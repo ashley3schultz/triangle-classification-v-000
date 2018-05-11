@@ -9,16 +9,16 @@ class Triangle
     @t << three
   end 
   
-  def larger_than_zero?
-    @t.any? {|s| s.to_f < 0.0}
-  end
+  #def larger_than_zero?
+  #  @t.any? {|s| s.to_f < 0.0}
+  #end
   
-  def triangle_inequality?
-      a = []
-      a << (@t[0] + @t[2]) - @t[1]
-      a << (@t[1] + @t[2]) - @t[0]
-      a.any? {|t| t < 0}
-  end
+  #def triangle_inequality?
+  #    a = []
+  #    a << (@t[0] + @t[2]) - @t[1]
+  #    a << (@t[1] + @t[2]) - @t[0]
+  #    a.any? {|t| t < 0}
+  #end
   
   def kind
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
