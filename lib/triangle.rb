@@ -37,10 +37,8 @@ class Triangle
     end
   end 
     
-      def below_zero?
-    @t.any? {|s| s <= 0
-      #binding.pry
-    }
+  def below_zero?
+    @t.any? {|s| s <= 0}
   end
   
     def equilateral?
