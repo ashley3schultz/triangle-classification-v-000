@@ -23,7 +23,7 @@ class Triangle
   end
   
   def find_kind
-    if below_zero? #|| triangle_inequality?
+    if (below_zero? || triangle_inequality?)
       begin
         raise TriangleError
       rescue TriangleError => error
