@@ -29,7 +29,7 @@ class Triangle
     #      puts error.message 
     #  end
     else 
-    #if no error is raised
+    ###
       if equilateral?
         @kind = :equilateral
       elsif isosceles?
@@ -37,7 +37,7 @@ class Triangle
       else scalene?
         @kind = :scalene
       end
-    #end if no error is raised
+    ###
     end
     
   end 
