@@ -16,14 +16,14 @@ class Triangle
   
   def triangle_inequality?
       a = []
-      a = (@t[1] + @t[2]) - @t[0]
-      b = (@t[0] + @t[2]) - @t[1]
-      c = (@t[0] + @t[1]) - @t[2]
+      a << (@t[1] + @t[2]) - @t[0]
+      a << (@t[0] + @t[2]) - @t[1]
+      a << (@t[0] + @t[1]) - @t[2]
       a.any? {|t| t < 0}
   end
   
   def find_kind
-    if below_zero? #triangle_inequality?
+    if below_zero? || triangle_inequality?
       begin
         raise TriangleError
       rescue TriangleError => error
