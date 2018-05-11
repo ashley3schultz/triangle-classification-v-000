@@ -24,8 +24,8 @@ class Triangle
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
       type = @equilateral if @t.all? {|s| s == @t[0]} 
         
-      if @t[0] == @t[2]
-        type = @scalene
+      type = @scalene if @t[0] == @t[2]
+        
       else @t[1] == @t[2] || @t[1] == @t[3]
         type = @isosceles
       end 
