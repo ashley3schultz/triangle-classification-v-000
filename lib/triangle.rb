@@ -26,8 +26,10 @@ class Triangle
       @kind = "equilateral"
     elsif scalene?
       @kind = "scalene"
-    else isosceles?
+    elsif isosceles?
       @kind = "isosceles"
+    else 
+      FALSE
     end 
     @kind
   end
