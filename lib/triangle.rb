@@ -7,6 +7,7 @@ class Triangle
     @t << one 
     @t << two 
     @t << three
+    @kind = find_kind
   end 
   
   #def larger_than_zero?
@@ -21,8 +22,15 @@ class Triangle
   #end
   
   def kind
+    if equilateral?
+      @kind = "equilateral"
+    end 
+    
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
-      type = @equilateral if @t.all? {|s| s == @t[0]} 
+    
+    def equilateral?
+      @t.all? {|s| s == @t[0]} 
+    end
       type = @scalene if @t[0] == @t[2]
       type = @isosceles if @t[1] == @t[2] || @t[1] == @t[3]
       @kind = type
