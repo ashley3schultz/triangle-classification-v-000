@@ -10,17 +10,17 @@ class Triangle
     @kind = find_kind
   end 
   
-  def below_zero?
-    @t.any? {|s| s <= 0}
-  end
-  
-  def triangle_inequality?
-      a = []
-      a << (@t[1] + @t[2]) - @t[0]
-      a << (@t[0] + @t[2]) - @t[1]
-      a << (@t[0] + @t[1]) - @t[2]
-      a.any? {|t| t < 0}
-  end
+    def below_zero?
+      @t.any? {|s| s <= 0}
+    end
+    
+    def triangle_inequality?
+        a = []
+        a << (@t[1] + @t[2]) - @t[0]
+        a << (@t[0] + @t[2]) - @t[1]
+        a << (@t[0] + @t[1]) - @t[2]
+        a.any? {|t| t < 0}
+    end
   
   def find_kind
     if below_zero? || triangle_inequality?
