@@ -19,6 +19,7 @@ class Triangle
   
   def find_kind
     zero = @t.any? {|s| s <= 0}
+    binding.pry
     if zero == TRUE
       begin
         raise TriangleError
