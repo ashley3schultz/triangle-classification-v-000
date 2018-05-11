@@ -25,6 +25,12 @@ class Triangle
     if equilateral?
       @kind = "equilateral"
     end 
+    if equilateral?
+      @kind = "equilateral"
+    end 
+    if equilateral?
+      @kind = "equilateral"
+    end 
     
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
     
