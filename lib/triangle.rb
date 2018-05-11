@@ -39,11 +39,11 @@ class Triangle
       @t.all? {|s| s == @t[0]} 
     end
     
-    def isosceles?scalene?
+    def scalene?
       @t[1] == @t[2] || @t[1] == @t[3]
     end 
     
-    def 
+    def isosceles?
       @t[0] == @t[2]
     end
   
