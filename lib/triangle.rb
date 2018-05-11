@@ -24,9 +24,9 @@ class Triangle
   def find_kind
     if equilateral? == TRUE
       @kind = :equilateral
-    elsif scalene? == TRUE
+    elsif isosceles? == TRUE
       @kind = :isosceles
-    else isosceles? == TRUE
+    else scalene? == TRUE
       @kind = :scalene
     end 
   end
