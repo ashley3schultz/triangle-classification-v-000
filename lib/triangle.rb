@@ -22,10 +22,9 @@ class Triangle
   #end
   
   def find_kind
-    #if equilateral?
-    #  @kind = 
-      @kind = :equilateral if @t.all? {|s| s == @t[0]}
-    if isosceles?
+    if equilateral?
+      @kind = :equilateral
+    elsif isosceles?
       @kind = :isosceles
     else scalene?
       @kind = :scalene
