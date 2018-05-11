@@ -22,21 +22,20 @@ class Triangle
   #end
   
   def find_kind
-    if equilateral?
-      @kind = :equilateral
-    elsif isosceles?
-      @kind = :isosceles
-    else scalene?
-      @kind = :scalene
-    end 
     if below_zero? 
     # begin
     #    raise TriangleError
     #  rescue TriangleError => error 
     #      puts error.message 
     #  end
-    #else 
-    #  puts "Looks good!"
+    else 
+      if equilateral?
+        @kind = :equilateral
+      elsif isosceles?
+        @kind = :isosceles
+      else scalene?
+        @kind = :scalene
+      end
     #end
   end 
     
