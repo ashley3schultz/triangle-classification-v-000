@@ -25,9 +25,9 @@ class Triangle
     if equilateral? == TRUE
       @kind = :equilateral
     elsif scalene? == TRUE
-      @kind = :scalene
-    else #isosceles? == TRUE
       @kind = :isosceles
+    else #isosceles? == TRUE
+      @kind = :scalene
     end 
   end
     
