@@ -24,12 +24,10 @@ class Triangle
   def find_kind
     if equilateral?
       @kind = "equilateral"
-    end 
-    if isosceles?
-      @kind = "isosceles"
-    end 
-    if scalene?
+    elsif scalene?
       @kind = "scalene"
+    else isosceles?
+      @kind = "isosceles"
     end 
     @kind
   end
