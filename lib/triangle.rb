@@ -29,15 +29,15 @@ class Triangle
     else scalene?
       @kind = :scalene
     end 
-    if below_zero? 
-     begin
-        raise TriangleError
-      rescue TriangleError => error 
-          puts error.message 
-      end
-    else 
-      puts "Looks good!"
-    end
+    #if below_zero? 
+    # begin
+    #    raise TriangleError
+    #  rescue TriangleError => error 
+    #      puts error.message 
+    #  end
+    #else 
+    #  puts "Looks good!"
+    #end
   end 
     
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
