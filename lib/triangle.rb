@@ -21,7 +21,7 @@ class Triangle
   #    a.any? {|t| t < 0}
   #end
   
-  def kind
+  def find_kind
     if equilateral?
       @kind = "equilateral"
     end 
@@ -31,6 +31,8 @@ class Triangle
     if scalene?
       @kind = "scalene"
     end 
+    @kind
+  end
     
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
     
