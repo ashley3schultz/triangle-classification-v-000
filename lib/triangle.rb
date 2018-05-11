@@ -29,7 +29,7 @@ class Triangle
     else scalene?
       @kind = :scalene
     end 
-    #if below_zero? 
+    if below_zero? 
     # begin
     #    raise TriangleError
     #  rescue TriangleError => error 
