@@ -29,6 +29,7 @@ class Triangle
     else scalene? == TRUE
       @kind = :scalene
     end 
+    
   end
     
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
