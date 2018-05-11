@@ -31,7 +31,6 @@ class Triangle
     else 
       FALSE
     end 
-    @kind
   end
     
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
