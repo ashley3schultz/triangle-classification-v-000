@@ -39,11 +39,14 @@ class Triangle
     def equilateral?
       @t.all? {|s| s == @t[0]} 
     end
-      type = @scalene if @t[0] == @t[2]
-      type = @isosceles if @t[1] == @t[2] || @t[1] == @t[3]
-      @kind = type
-      #binding.pry
-  end
+    
+    def isosceles?
+      @t[1] == @t[2] || @t[1] == @t[3]
+    end 
+    
+    def scalene?
+      @t[0] == @t[2]
+    end
   
   #def check_specifications
   #  if triangle_type == nil
