@@ -18,7 +18,7 @@ class Triangle
   #end
   
   def find_kind
-    if below_zero?
+    if @t.any? {|s| s <= 0}
       begin
         raise TriangleError
       rescue TriangleError => error
