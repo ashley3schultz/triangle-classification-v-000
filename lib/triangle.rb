@@ -39,7 +39,6 @@ class Triangle
       end
     ###
     end
-    
   end 
     
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
