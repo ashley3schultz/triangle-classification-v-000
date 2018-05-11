@@ -23,15 +23,10 @@ class Triangle
   def kind
     #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
       type = @equilateral if @t.all? {|s| s == @t[0]} 
-        
       type = @scalene if @t[0] == @t[2]
-        
-      else @t[1] == @t[2] || @t[1] == @t[3]
-        type = @isosceles
-      end 
-  #end
-  type
-end
+      type = @isosceles if @t[1] == @t[2] || @t[1] == @t[3]
+      type
+  end
   
   #def check_specifications
   #  if triangle_type == nil
