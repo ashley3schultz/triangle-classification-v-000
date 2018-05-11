@@ -23,14 +23,14 @@ class Triangle
   def kind
     if triangle_inequality? == TRUE && larger_than_zero? == TRUE
       if @t.all? {|s| s == @t[0]} 
-        self.kind = @equilateral
+        type = @equilateral
       elsif @t[0] == @t[2]
-        self.kind = @scalene
+        type = @scalene
       else @t[1] == @t[2] || @t[1] == @t[3]
-        self.kind = @isosceles
+        type = @isosceles
       end 
   end
-  self.kind
+  type
 end
   
   #def check_specifications
