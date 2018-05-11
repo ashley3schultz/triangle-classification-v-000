@@ -22,11 +22,11 @@ class Triangle
   #end
   
   def find_kind
-    if below_zero? 
-    # begin
-    #    raise TriangleError
-    #  rescue TriangleError => error 
-    #      puts error.message 
+    if below_zero?
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message 
     #  end
     else 
     ###
