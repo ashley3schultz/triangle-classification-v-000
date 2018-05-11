@@ -18,7 +18,7 @@ class Triangle
   #end
   
   def find_kind
-    if below_zero?
+    if below_zero? 
       begin
         raise TriangleError
       rescue TriangleError => error
@@ -53,17 +53,8 @@ class Triangle
       @t[0] != @t[1] && @t[0] != @t[2] && @t[1] != @t[2]
     end
   
-  #def check_specifications
-  #  if triangle_type == nil
-  #   begin 
-  #      raise TriangleError
-  #    rescue TriangleError => error  
-  #        puts error.message 
-  #    end
-  #  else 
-  #    puts "Looks good!"
-  #  end
-  #end
+  def check_sides
+  
   
   class TriangleError < StandardError 
     def message 
