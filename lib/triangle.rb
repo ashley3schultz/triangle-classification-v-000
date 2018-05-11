@@ -11,7 +11,7 @@ class Triangle
   end 
   
   def below_zero?
-    @t.any? {|s| s <= 0
+    @t.any? {|s| s == 0
       #binding.pry
     }
   end
