@@ -1,13 +1,13 @@
 require 'pry'
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene
+  attr_accessor :equilateral, :isosceles, :scalene, :kind
   
   def initialize(one, two, three)
     @t = []
     @t << one 
     @t << two 
     @t << three
-    #@kind = find_kind
+    @kind = find_kind
   end 
   
     def below_zero?
