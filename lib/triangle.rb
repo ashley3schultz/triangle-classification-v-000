@@ -38,11 +38,11 @@ class Triangle
     end
     
     def isosceles?
-      @t[1] == @t[2] || @t[1] == @t[3] || @t[0] == @t[2]
+      @t[0] == @t[1] || @t[0] == @t[2] || @t[1] == @t[2]
     end 
     
     def scalene?
-      @t[1] != @t[2] || @t[1] != @t[3] || @t[0] != @t[2]
+      @t[0] != @t[1] || @t[0] != @t[2] || @t[1] != @t[2]
     end
   
   #def check_specifications
