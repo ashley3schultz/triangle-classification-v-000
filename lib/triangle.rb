@@ -43,8 +43,6 @@ class Triangle
     end
   end 
     
-    #if triangle_inequality? == TRUE && larger_than_zero? == TRUE
-    
     def equilateral?
       @t.all? {|s| s == @t[0]} 
     end
