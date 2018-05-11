@@ -25,7 +25,7 @@ class Triangle
       type = @equilateral if @t.all? {|s| s == @t[0]} 
       type = @scalene if @t[0] == @t[2]
       type = @isosceles if @t[1] == @t[2] || @t[1] == @t[3]
-      type
+      @kind = type
       binding.pry
   end
   
