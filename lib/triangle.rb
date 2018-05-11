@@ -23,9 +23,6 @@ class Triangle
     end
   
   def find_kind
-    a = below_zero?
-    b = triangle_inequality?
-    binding.pry
     if below_zero? || triangle_inequality?
       begin
         raise TriangleError
