@@ -26,10 +26,8 @@ class Triangle
       @kind = :equilateral
     elsif scalene? == TRUE
       @kind = :scalene
-    elsif isosceles? == TRUE
+    else isosceles? == TRUE
       @kind = :isosceles
-    else 
-      FALSE
     end 
   end
     
@@ -39,13 +37,13 @@ class Triangle
       @t.all? {|s| s == @t[0]} 
     end
     
-    def scalene?
-      @t[1] == @t[2] || @t[1] == @t[3]
+    def isosceles?
+      @t[1] == @t[2] || @t[1] == @t[3] || @t[0] == @t[2]
     end 
     
-    def isosceles?
-      @t[0] == @t[2]
-    end
+    #def scalene?
+    #  @t[0] == @t[2]
+    #end
   
   #def check_specifications
   #  if triangle_type == nil
