@@ -10,9 +10,9 @@ class Triangle
     @kind = find_kind
   end 
   
-  #def larger_than_zero?
-  #  @t.any? {|s| s.to_f < 0.0}
-  #end
+  def below_zero?
+    @t.any? {|s| s.to_f < 0.0}
+  end
   
   #def triangle_inequality?
   #    a = []
